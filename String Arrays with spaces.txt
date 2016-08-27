@@ -1,0 +1,23 @@
+#include <iostream>
+#include<cstdio>
+using namespace std;
+
+int main() {
+	char str[105][10000];
+	int t,n;
+	cin>>t;
+	while(t--){
+		cin>>n;
+		cin.ignore();
+		for(int i=0;i<n;i++){
+			
+			gets(str[i]);
+			
+		}
+		for(int i=0;i<n;i++){
+			cout<<str[i]<<"\n";
+		}
+	}
+	// your code goes here
+	return 0;
+}
