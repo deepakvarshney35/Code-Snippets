@@ -1,0 +1,23 @@
+#include <iostream>
+#include<cstdio>
+#include<algorithm>
+using namespace std;
+
+int main() {
+	string str[105];
+	int t,n;
+	cin>>t;
+	while(t--){
+		cin>>n;
+		cin.ignore();
+		for(int i=0;i<n;i++){
+			getline(cin,str[i]);
+		}
+		sort(str,str+n);
+		for(int i=0;i<n;i++){
+			cout<<str[i]<<" ";
+		}
+	}
+	// your code goes here
+	return 0;
+}
