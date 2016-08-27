@@ -1,0 +1,21 @@
+#include <iostream>
+#include<vector>
+#include<algorithm>
+using namespace std;
+
+int main() {
+	vector<pair<pair<int,int>,int > > vp;
+	vp.push_back({{2,3},4});
+	vp.push_back({{1,5},6});
+	vp.push_back({{4,6},7});
+	
+	
+	sort(vp.begin(),vp.end());
+	
+	for(auto it:vp){
+		cout<<it.first.first<<" "<<it.second<<"\n";
+	}
+	
+	// your code goes here
+	return 0;
+}
